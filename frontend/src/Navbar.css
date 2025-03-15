@@ -1,0 +1,135 @@
+/* .navbar-container {
+    width: 100%;
+    height: 65px;
+    background-color: #4A90E2;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    background-color: #005bb5;
+    color: #ffcc00;
+}
+
+.logout-btn {
+    cursor: pointer;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e63946;
+} */
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;  /* Ensures logo and links are properly spaced */
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4A90E2; /* Bright blue for visibility */
+    color: #fff;
+    position: fixed; /* Ensures navbar stays at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar appears above content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+
+/* Logo */
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    min-width: 100px;
+    
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between icon and text */
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: flex;             /* Align icon and text */
+    align-items: center;       /* Vertical centering */
+    gap: 5px;                  /* Spacing between icon and text */
+    padding: 6px 12px; 
+    margin-right:5px;        
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    max-width: 100px; 
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;     /* Removes unwanted underline */
+}
+.logout-btn:hover {
+    background-color: #e63946;
+}
+
+/* Content Margin to Prevent Overlapping */
+.content {
+    margin-top: 70px; /* Prevents navbar from covering the page content */
+}
